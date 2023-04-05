@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD49948C29DD076200CCBFF0 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = BD49948B29DD076200CCBFF0 /* randomUsers.json */; };
 		BD6C2E9B29DC6F830036B786 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C2E9A29DC6F830036B786 /* User.swift */; };
 		BD9D43BB29DB56040047A987 /* RandomUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D43BA29DB56040047A987 /* RandomUsersApp.swift */; };
 		BD9D43BD29DB56040047A987 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D43BC29DB56040047A987 /* UsersView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD49948B29DD076200CCBFF0 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
 		BD6C2E9A29DC6F830036B786 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BD9D43B729DB56040047A987 /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9D43BA29DB56040047A987 /* RandomUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersApp.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		BD9D43AE29DB56040047A987 = {
 			isa = PBXGroup;
 			children = (
+				BD49948B29DD076200CCBFF0 /* randomUsers.json */,
 				BD9D43B929DB56040047A987 /* RandomUsers */,
 				BD9D43CA29DB56050047A987 /* RandomUsersTests */,
 				BD9D43D429DB56050047A987 /* RandomUsersUITests */,
@@ -242,6 +245,7 @@
 			files = (
 				BD9D43C229DB56050047A987 /* Preview Assets.xcassets in Resources */,
 				BD9D43BF29DB56050047A987 /* Assets.xcassets in Resources */,
+				BD49948C29DD076200CCBFF0 /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
