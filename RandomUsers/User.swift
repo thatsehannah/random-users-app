@@ -20,6 +20,7 @@ struct Response: Decodable {
 struct User: Identifiable, Decodable {
     let id: String
     let name: Name
+    let picture: Picture
     
     var fullName: String {
         name.title + ". " + name.first + " " + name.last
@@ -31,6 +32,8 @@ struct User: Identifiable, Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(Name.self, forKey: .name)
         
+        picture = try values.decode(Picture.self, forKey: .picture)
+        
         //gets the value associated with uuid key in the nested LogInfoCodingKeys container
         //using the nestedContainer to access the uuid for the "login" key, we can assign the id of the User to the appropriate value
         let loginInfo = try values.nestedContainer(keyedBy: LoginInfoCodingKeys.self, forKey: .login)
@@ -40,6 +43,7 @@ struct User: Identifiable, Decodable {
     enum CodingKeys: String, CodingKey {
         case login
         case name //matches the "name" key of the JSON data
+        case picture
     }
     
     //Needed to used this because the uuid key is nested under the login key
@@ -52,4 +56,10 @@ struct Name: Decodable {
     let title: String
     let first: String
     let last: String
+}
+
+struct Picture: Decodable {
+    let large: String
+    let medium: String
+    let thumbnail: String
 }
